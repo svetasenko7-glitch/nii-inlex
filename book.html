@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex">
+	<title>Научный журнал ИНЛЕКС</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="javascripts/script.js"></script>
+    <link rel="icon" href="images/favicon.svg" sizes="32x32">
+	<link rel="icon" href="images/favicon.svg" sizes="192x192">
+	<link rel="apple-touch-icon" href="images/favicon.svg">
+</head>
+
+<body>
+  <header class="header">
+    <a href="home.html" class="logo">
+      <img src="images/logo-inlex.svg" alt="Логотип ИНЛЕКС" class="logo-img">
+    </a>
+    <ul class="desktop-nav">
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="shop.html">Каталог</a></li>
+      <li class="active"><a href="book.html">Журнал</a></li>
+      <li><a href="news.html">Новости</a></li>
+    </ul>
+    <div class="header-contacts">
+      <a href="tel:+74954321100" class="phone-desktop">+7 (495) 432-11-00</a>
+      <div class="social-icons-desktop">
+        <a href="https://t.me/" class="social-btn-desktop tg-desktop" aria-label="Telegram"></a>
+        <a href="https://vk.com" class="social-btn-desktop vk-desktop" aria-label="VK"></a>
+      </div>
+    </div>
+    <div class="mobile-header-actions">
+      <a href="tel:+74954321100" class="mobile-phone-btn" aria-label="Позвонить"></a>
+           <button class="burger-btn js-menu-toggle"  aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+	<div class="mob-menu-overlay" id="mobile-menu">
+  <div class="mob-menu-dialog">
+    <div class="mob-menu-box">
+      <ul class="menu-nav">
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="shop.html">Каталог</a></li>
+        <li><a href="book.html">Журнал</a></li>
+        <li><a href="news.html">Новости</a></li>
+      </ul>
+      <div class="menu-contacts">
+        <a href="tel:+74954321100" class="menu-phone">+7 (495) 432-11-00</a>
+        <span class="menu-callback">заказать обратный звонок</span>
+      </div>
+      <div class="menu-socials">
+        <div class="menu-line"></div>
+        <a href="https://t.me/" class="social-btn-popup tg-popup" aria-label="Telegram"></a>
+        <a href="https://vk.com" class="social-btn-popup vk-popup" aria-label="VK"></a>
+        <div class="menu-line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  </header>
+  
+
+  <main>
+<section class="jrnl-page-section">
+      <div class="jrnl-page-header">
+        <h1 class="jrnl-page-title">Журнал</h1>
+        <a href="files/magazine-inlex.pdf" download target="_blank" class="jrnl-page-download-btn">
+          Скачать цветной экземпляр
+        </a>
+      </div>
+      <div class="gal-slider-wrapper js-gallery-slider">
+        <div class="gal-slider-raw-data" style="display: none;">
+          <div class="js-gal-slide-data" data-color="images/book-1.webp"></div>
+          <div class="js-gal-slide-data" data-color="images/book-2.webp"></div>
+          <div class="js-gal-slide-data" data-color="images/book-3.webp"></div>
+          <div class="js-gal-slide-data" data-color="images/book-4.webp"></div>
+          <div class="js-gal-slide-data" data-color="images/book-5.webp"></div>
+          <div class="js-gal-slide-data" data-color="images/book-6.webp"></div>
+          <div class="js-gal-slide-data" data-color="images/book-7.webp"></div>
+          <div class="js-gal-slide-data" data-color="images/book-8.webp"></div>
+          <div class="js-gal-slide-data" data-color="images/book-9.webp"></div>
+          <div class="js-gal-slide-data" data-color="images/book-10.webp"></div>
+          <div class="js-gal-slide-data" data-color="images/book-11.webp"></div>
+        </div>
+        <div class="gal-slider-layout">
+          <div class="gal-slider-sidebar gal-slider-sidebar--left">
+            <button class="gal-slider-arrow-btn gal-slider-arrow-btn--left js-gal-prev" aria-label="Назад"></button>
+            <div class="gal-slider-peek-box">
+              <img src="" alt="" class="gal-slider-peek-img js-gal-left-img">
+            </div>
+          </div>
+          <div class="gal-slider-main-col js-gal-main-col">
+            <img src="" alt="Разворот журнала ИНЛЕКС" class="gal-slider-main-img gal-slider-main-img--color js-gal-color-img">
+            <img src="" alt="Разворот журнала ИНЛЕКС ч/б" class="gal-slider-main-img gal-slider-main-img--bw js-gal-bw-img">
+          </div>
+          <div class="gal-slider-sidebar gal-slider-sidebar--right">
+            <div class="gal-slider-peek-box">
+              <img src="" alt="" class="gal-slider-peek-img js-gal-right-img">
+            </div>
+            <button class="gal-slider-arrow-btn gal-slider-arrow-btn--right js-gal-next" aria-label="Вперед"></button>
+          </div>
+        </div>
+        <div class="gal-slider-dots js-gal-dots"></div>
+      </div>
+    </section>
+    <section class="awrd-ticker-section">
+      <div class="awrd-ticker-container" id="awardsTicker">
+        <div class="awrd-ticker-track" id="awardsTickerTrack">
+          <div class="awrd-ticker-item">Премия «Лучшая инъекция года» (2024)</div>
+          <div class="awrd-ticker-item">Премия «Золотой скарабей» (2025)</div>
+          <div class="awrd-ticker-item">Премия «Выбор муз» (2025)</div>
+          <div class="awrd-ticker-item">Премия «Нейро-Прорыв» (2026)</div>
+          <div class="awrd-ticker-item">Премия «Цифровой Гиппокамп» (2026)</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-block">
+          <h3 class="footer-title">Контакты</h3>
+          <a href="tel:+74954321100" class="footer-phone">+7 (495) 432-11-00</a>
+          <p class="footer-text footer-schedule">с 09:00 по 18:00 ежедневно</p>
+          <p class="footer-text footer-address">г. Москва, ул. Никакая, д. 0/А</p>
+          <a href="mailto:info@inlex.ru" class="footer-text footer-email">info@inlex.ru</a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <div class="footer-block">
+          <h3 class="footer-title">Меню</h3>
+          <ul class="footer-menu">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="shop.html">Каталог</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="book.html">Журнал</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-block footer-social-block">
+          <h3 class="footer-title">Присоединяйтесь</h3>
+          <div class="footer-socials">
+            <a href="https://t.me/" class="social-btn-footer tg-footer" aria-label="Telegram"></a>
+            <a href="https://vk.com/" class="social-btn-footer vk-footer" aria-label="VK"></a>
+          </div>
+        </div>
+        <div class="footer-block footer-subscribe-block">
+          <h3 class="footer-title">Подписаться на рассылку</h3>
+          <form id="subscribe-form" class="subscribe-form">
+            <input type="text" class="subscribe-input" placeholder="Введите email">
+            <button type="submit" class="subscribe-btn" aria-label="Подписаться"></button>
+          </form>
+          <p id="subscribe-success" class="subscribe-success" style="display: none;">Ваша заявка принята</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© Научный институт ИНЛЕКС, 2148 до н.э. — 2026 н.э.</div>
+      <div class="footer-legal">
+        <a href="404.html">Политика конфиденциальности</a>
+        <a href="404.html">Пользовательское соглашение</a>
+      </div>
+    </div>
+  </footer>
+  
+  
+</body>
+
+</html>

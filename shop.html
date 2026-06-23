@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex">
+	<title>Каталог сувениров НИИ ИНЛЕКС</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="javascripts/script.js"></script>
+	<link rel="icon" href="images/favicon.svg" sizes="32x32">
+	<link rel="icon" href="images/favicon.svg" sizes="192x192">
+	<link rel="apple-touch-icon" href="images/favicon.svg">
+</head>
+
+<body>
+  <header class="header">
+    <a href="home.html" class="logo">
+      <img src="images/logo-inlex.svg" alt="Логотип ИНЛЕКС" class="logo-img">
+    </a>
+    <ul class="desktop-nav">
+      <li><a href="about.html">О нас</a></li>
+      <li class="active"><a href="shop.html">Каталог</a></li>
+      <li><a href="book.html">Журнал</a></li>
+      <li><a href="news.html">Новости</a></li>
+    </ul>
+    <div class="header-contacts">
+      <a href="tel:+74954321100" class="phone-desktop">+7 (495) 432-11-00</a>
+      <div class="social-icons-desktop">
+        <a href="https://t.me/" class="social-btn-desktop tg-desktop" aria-label="Telegram"></a>
+        <a href="https://vk.com" class="social-btn-desktop vk-desktop" aria-label="VK"></a>
+      </div>
+    </div>
+    <div class="mobile-header-actions">
+      <a href="tel:+74954321100" class="mobile-phone-btn" aria-label="Позвонить"></a>
+               <button class="burger-btn js-menu-toggle"  aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+<div class="mob-menu-overlay" id="mobile-menu">
+  <div class="mob-menu-dialog">
+    <div class="mob-menu-box">
+      <ul class="menu-nav">
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="shop.html">Каталог</a></li>
+        <li><a href="book.html">Журнал</a></li>
+        <li><a href="news.html">Новости</a></li>
+      </ul>
+      <div class="menu-contacts">
+        <a href="tel:+74954321100" class="menu-phone">+7 (495) 432-11-00</a>
+        <span class="menu-callback">заказать обратный звонок</span>
+      </div>
+      <div class="menu-socials">
+        <div class="menu-line"></div>
+        <a href="https://t.me/" class="social-btn-popup tg-popup" aria-label="Telegram"></a>
+        <a href="https://vk.com" class="social-btn-popup vk-popup" aria-label="VK"></a>
+        <div class="menu-line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  </header>
+  
+
+  <main>
+    <section class="cat-section">
+      <h2 class="cat-main-title">Каталог</h2>
+      <div class="cat-grid">
+        <div class="cat-card">
+          <div class="cat-img-wrapper">
+            <img src="images/product-notebook.webp" alt="Ежедневник" class="cat-img-default">
+            <img src="images/product-notebook-black.webp" alt="Ежедневник ч/б" class="cat-img-hover">
+            <div class="cat-corner-cube"></div>
+            <button class="cat-cart-btn js-popup-trigger" data-popup="catOrderModal" data-res-name="Ежедневник" data-res-price="3000 ₽">
+              <img src="images/cart.png" alt="В корзину" class="cat-cart-icon">
+            </button>
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-name">Ежедневник</h3>
+            <p class="cat-price">3000 ₽</p>
+          </div>
+        </div>
+		 <div class="cat-card">
+          <div class="cat-img-wrapper">
+            <img src="images/product-bag.webp" alt="Шоппер" class="cat-img-default">
+            <img src="images/product-bag-black.webp" alt="Шоппер ч/б" class="cat-img-hover">
+            <div class="cat-corner-cube"></div>
+            <button class="cat-cart-btn js-popup-trigger" data-popup="catOrderModal" data-res-name="Шоппер" data-res-price="3000 ₽">
+              <img src="images/cart.png" alt="В корзину" class="cat-cart-icon">
+            </button>
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-name">Шоппер</h3>
+            <p class="cat-price">3000 ₽</p>
+          </div>
+        </div>
+		<div class="cat-card">
+          <div class="cat-img-wrapper">
+            <img src="images/product-mug.webp" alt="Термокружка" class="cat-img-default">
+            <img src="images/product-mug-black.webp" alt="Термокружка ч/б" class="cat-img-hover">
+            <div class="cat-corner-cube"></div>
+            <button class="cat-cart-btn js-popup-trigger" data-popup="catOrderModal" data-res-name="Термокружка" data-res-price="2000 ₽">
+              <img src="images/cart.png" alt="В корзину" class="cat-cart-icon">
+            </button>
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-name">Термокружка</h3>
+            <p class="cat-price">2000 ₽</p>
+          </div>
+        </div>
+		<div class="cat-card">
+          <div class="cat-img-wrapper">
+            <img src="images/product-keychain.webp" alt="Брелок для ключей" class="cat-img-default">
+            <img src="images/product-keychain-black.webp" alt="Брелок ч/б" class="cat-img-hover">
+            <div class="cat-corner-cube"></div>
+            <button class="cat-cart-btn js-popup-trigger" data-popup="catOrderModal" data-res-name="Брелок для ключей" data-res-price="300 ₽">
+              <img src="images/cart.png" alt="В корзину" class="cat-cart-icon">
+            </button>
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-name">Брелок для ключей</h3>
+            <p class="cat-price">300 ₽</p>
+          </div>
+        </div>
+		 <div class="cat-card">
+          <div class="cat-img-wrapper">
+            <img src="images/product-case.webp" alt="Чехол для телефона" class="cat-img-default">
+            <img src="images/product-case-black.webp" alt="Чехол ч/б" class="cat-img-hover">
+            <div class="cat-corner-cube"></div>
+            <button class="cat-cart-btn js-popup-trigger" data-popup="catOrderModal" data-res-name="Чехол для телефона" data-res-price="1000 ₽">
+              <img src="images/cart.png" alt="В корзину" class="cat-cart-icon">
+            </button>
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-name">Чехол для телефона</h3>
+            <p class="cat-price">1000 ₽</p>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-img-wrapper">
+            <img src="images/product-badge.webp" alt="Значок в ассортименте" class="cat-img-default">
+            <img src="images/product-badge-black.webp" alt="Значок ч/б" class="cat-img-hover">
+            <div class="cat-corner-cube"></div>
+            <button class="cat-cart-btn js-popup-trigger" data-popup="catOrderModal" data-res-name="Значок в ассортименте" data-res-price="300 ₽">
+              <img src="images/cart.png" alt="В корзину" class="cat-cart-icon">
+            </button>
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-name">Значок в ассортименте</h3>
+            <p class="cat-price">300 ₽</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <section class="awrd-ticker-section">
+      <div class="awrd-ticker-container" id="awardsTicker">
+        <div class="awrd-ticker-track" id="awardsTickerTrack">
+          <div class="awrd-ticker-item">Премия «Лучшая инъекция года» (2024)</div>
+          <div class="awrd-ticker-item">Премия «Золотой скарабей» (2025)</div>
+          <div class="awrd-ticker-item">Премия «Выбор муз» (2025)</div>
+          <div class="awrd-ticker-item">Премия «Нейро-Прорыв» (2026)</div>
+          <div class="awrd-ticker-item">Премия «Цифровой Гиппокамп» (2026)</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-block">
+          <h3 class="footer-title">Контакты</h3>
+          <a href="tel:+74954321100" class="footer-phone">+7 (495) 432-11-00</a>
+          <p class="footer-text footer-schedule">с 09:00 по 18:00 ежедневно</p>
+          <p class="footer-text footer-address">г. Москва, ул. Никакая, д. 0/А</p>
+          <a href="mailto:info@inlex.ru" class="footer-text footer-email">info@inlex.ru</a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <div class="footer-block">
+          <h3 class="footer-title">Меню</h3>
+          <ul class="footer-menu">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="shop.html">Каталог</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="book.html">Журнал</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-block footer-social-block">
+          <h3 class="footer-title">Присоединяйтесь</h3>
+          <div class="footer-socials">
+            <a href="https://t.me/" class="social-btn-footer tg-footer" aria-label="Telegram"></a>
+            <a href="https://vk.com/" class="social-btn-footer vk-footer" aria-label="VK"></a>
+          </div>
+        </div>
+        <div class="footer-block footer-subscribe-block">
+          <h3 class="footer-title">Подписаться на рассылку</h3>
+          <form id="subscribe-form" class="subscribe-form">
+            <input type="text" class="subscribe-input" placeholder="Введите email">
+            <button type="submit" class="subscribe-btn" aria-label="Подписаться"></button>
+          </form>
+          <p id="subscribe-success" class="subscribe-success" style="display: none;">Ваша заявка принята</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© Научный институт ИНЛЕКС, 2148 до н.э. — 2026 н.э.</div>
+      <div class="footer-legal">
+        <a href="404.html">Политика конфиденциальности</a>
+        <a href="404.html">Пользовательское соглашение</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="popup" id="catOrderModal">
+    <div class="popup__dialog cat-popup-dialog">
+      <button class="popup__close js-popup-close" aria-label="Закрыть">✕</button>
+      <div class="popup__content cat-popup-content">
+        <div id="catModalFormScreen">
+          <h3 class="cat-modal-title">Оформление заказа</h3>
+          <div class="cat-order-product-line">
+            <span data-popup-field="name">Товар</span>
+            <span class="cat-dotted-line"></span>
+            <span data-popup-field="price">0 ₽</span>
+          </div>
+          <form id="catOrderForm" class="cat-form" novalidate>
+            <input type="text" name="name" class="cat-input" placeholder="ФИО" required>
+            <input type="tel" name="phone" class="cat-input" placeholder="Телефон" required>
+            <input type="email" name="email" class="cat-input" placeholder="Email" required>
+            <label class="cat-checkbox-label">
+              <input type="checkbox" name="policy" class="cat-checkbox-real" required checked>
+              <span class="cat-checkbox-fake"></span>
+              <span class="cat-checkbox-text">
+                Ознакомлен с Политикой безопасности в отношении обработки персональных данных и даю свое согласие на обработку персональных данных
+              </span>
+            </label>
+            <button type="submit" class="cat-submit-btn">Заказать</button>
+          </form>
+        </div>
+        <div id="catModalSuccessScreen" style="display: none;">
+          <h3 class="cat-modal-title" style="margin-bottom: 0; text-align: center;">Ваш заказ принят</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
