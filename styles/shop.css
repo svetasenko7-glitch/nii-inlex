@@ -1,0 +1,323 @@
+.cat-section {
+  width: 100%;
+  background-color: var(--bg);
+  padding: 60px 50px 80px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cat-main-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.cat-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 1fr) 30px minmax(0, 1fr) 30px minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 80px 30px;
+  width: 100%;
+}
+
+.cat-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cat-img-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: var(--bg);
+  margin-bottom: 30px;
+}
+
+.cat-img-default,
+.cat-img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: opacity 0.7s ease;
+  transition: opacity 0.7s ease;
+}
+
+.cat-img-hover {
+  z-index: 2;
+  opacity: 0;
+}
+
+.cat-img-default {
+  z-index: 1;
+  opacity: 1;
+}
+
+ 
+.cat-card:hover .cat-img-hover {
+  opacity: 1;
+}
+
+.cat-cart-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 56px;
+  height: 56px;
+  background-color: var(--primary);
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  padding: 0;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: -webkit-transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), -webkit-transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.cat-cart-icon {
+  width: 29px;
+  height: 26px;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cat-cart-btn:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.cat-corner-cube {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary);
+  z-index: 5;
+}
+
+.cat-name {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--white);
+  margin: 0 0 15px 0;
+}
+
+.cat-price {
+  font-size: 38px;
+  font-weight: 400;
+  color: var(--primary);
+  margin: 0;
+}
+
+#catOrderModal .popup__dialog {
+  max-width: 503px;
+}
+
+#catOrderModal .popup__content {
+  padding: 30px;
+}
+
+.cat-modal-title {
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--bg);
+  margin: 0 0 35px 0;
+}
+
+.cat-order-product-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-weight: 700;
+  color: var(--bg);
+  margin-bottom: 25px;
+}
+
+.cat-dotted-line {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-bottom: 2px dotted var(--bg);
+  margin: 0 1px;
+  position: relative;
+ bottom:-1px;
+}
+
+.cat-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.cat-input {
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: 1px solid var(--bg);
+  padding: 0 15px;
+  font-size: 16px;
+  color: var(--bg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.cat-input::-webkit-input-placeholder {
+  color: rgba(7, 7, 7, 0.5);
+}
+
+.cat-input::-moz-placeholder {
+  color: rgba(7, 7, 7, 0.5);
+}
+
+.cat-input:-ms-input-placeholder {
+  color: rgba(7, 7, 7, 0.5);
+}
+
+.cat-input::-ms-input-placeholder {
+  color: rgba(7, 7, 7, 0.5);
+}
+
+.cat-input::placeholder {
+  color: rgba(7, 7, 7, 0.5);
+}
+
+.cat-input.is-error {
+  border: 2px solid red;
+}
+
+.cat-input.is-error::-webkit-input-placeholder {
+  color: red;
+}
+
+.cat-input.is-error::-moz-placeholder {
+  color: red;
+}
+
+.cat-input.is-error:-ms-input-placeholder {
+  color: red;
+}
+
+.cat-input.is-error::-ms-input-placeholder {
+  color: red;
+}
+
+.cat-input.is-error::placeholder {
+  color: red;
+}
+
+.cat-checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  margin: 5px 0 25px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.cat-checkbox-real {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.cat-checkbox-fake {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--bg);
+  background-color: transparent;
+  display: inline-block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 1px;
+  -webkit-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease;
+}
+
+.cat-checkbox-real:checked+.cat-checkbox-fake::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: var(--bg);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cat-checkbox-real.is-error+.cat-checkbox-fake {
+  border-color: red;
+}
+
+.cat-checkbox-text {
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--bg);
+}
+
+.cat-submit-btn {
+  width: 100%;
+  height: 46px;
+  background-color: var(--bg);
+  color: var(--primary);
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+  border: 2px solid var(--bg);
+}
+
+.cat-submit-btn:hover {
+  background-color: var(--primary);
+  color: var(--bg);
+  border: 2px solid var(--bg);
+}
