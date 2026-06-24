@@ -806,7 +806,7 @@ main {
 }
 
 .intro-btn-solid:hover {
-  background-color: transparent;
+  background-color: var(--bg);
   color: var(--primary);
 }
 
